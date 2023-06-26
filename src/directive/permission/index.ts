@@ -1,7 +1,7 @@
 /*
  * @Author: Mx
  * @Date: 2023-06-26 09:50:13
- * @Description: 
+ * @Description:
  */
 import { DirectiveBinding } from 'vue';
 import { useUserStore } from '@/store';

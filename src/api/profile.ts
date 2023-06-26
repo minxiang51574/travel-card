@@ -32,10 +32,6 @@ export interface ProfileBasicRes {
   };
 }
 
-export function queryProfileBasic() {
-  return axios.get<ProfileBasicRes>('/api/profile/basic');
-}
-
 export type operationLogRes = Array<{
   key: string;
   contentNumber: string;
