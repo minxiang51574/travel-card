@@ -1,3 +1,8 @@
+/*
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:57
+ * @Description:
+ */
 import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
@@ -6,8 +11,8 @@ const LIST: AppRouteRecordRaw = {
   name: 'list',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: 'menu.list',
-    requiresAuth: true,
+    locale: '列表管理',
+    requiresAuth: false,
     icon: 'icon-list',
     order: 2,
   },
@@ -18,8 +23,8 @@ const LIST: AppRouteRecordRaw = {
       component: () => import('@/views/list/search-table/index.vue'),
       meta: {
         locale: 'menu.list.searchTable',
-        requiresAuth: true,
-        roles: ['*'],
+        requiresAuth: false,
+        // roles: ['*'],
       },
     },
     {
