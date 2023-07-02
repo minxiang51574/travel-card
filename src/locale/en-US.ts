@@ -20,6 +20,8 @@ export default {
   'menu.faq': 'FAQ',
   'navbar.docs': 'Docs',
   'navbar.action.locale': 'Switch to English',
+  'card.manage': 'card manage',
+  'card.list': 'card list',
   ...localeSettings,
   ...localeMessageBox,
   ...localeLogin,

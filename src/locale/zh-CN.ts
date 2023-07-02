@@ -25,6 +25,8 @@ export default {
   'menu.faq': '常见问题',
   'navbar.docs': '文档中心',
   'navbar.action.locale': '切换为中文',
+  'card.manage': '旅游卡管理',
+  'card.list': '旅游卡列表',
   ...localeSettings,
   ...localeMessageBox,
   ...localeLogin,
