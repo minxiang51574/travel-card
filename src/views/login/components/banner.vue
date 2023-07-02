@@ -1,3 +1,8 @@
+<!--
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:57
+ * @Description: 
+-->
 <template>
   <div class="banner">
     <div class="banner-inner">
@@ -22,8 +27,10 @@
   const { t } = useI18n();
   const carouselItem = computed(() => [
     {
-      slogan: t('login.banner.slogan1'),
-      subSlogan: t('login.banner.subSlogan1'),
+      // slogan: t('login.banner.slogan1'),
+      // subSlogan: t('login.banner.subSlogan1'),
+      slogan: "",
+      subSlogan:"",
       image: bannerImage,
     }
   ]);

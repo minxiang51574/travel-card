@@ -8,6 +8,7 @@ import configImageminPlugin from './plugin/imagemin';
 export default mergeConfig(
   {
     mode: 'production',
+    base: '/travel/',
     plugins: [
       configCompressPlugin('gzip'),
       configVisualizerPlugin(),
