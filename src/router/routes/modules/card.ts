@@ -11,7 +11,7 @@ const LIST: AppRouteRecordRaw = {
   name: 'Card-manage',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: '旅游卡管理',
+    locale: 'menu.cardManage',
     requiresAuth: false,
     icon: 'icon-list',
     order: 1,
@@ -22,7 +22,7 @@ const LIST: AppRouteRecordRaw = {
       name: 'Card-list',
       component: () => import('@/views/card-manage/card-list.vue'),
       meta: {
-        locale: 'menu.dashboard',
+        locale: 'menu.cardManage.list',
         requiresAuth: true,
         roles: ['*'],
       },

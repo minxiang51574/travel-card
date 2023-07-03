@@ -1,7 +1,7 @@
 /*
  * @Author: Mx
  * @Date: 2023-07-03 10:59:30
- * @Description: 
+ * @Description:
  */
 import localeMessageBox from '@/components/message-box/locale/en-US';
 import localeLogin from '@/views/login/locale/en-US';
@@ -17,13 +17,18 @@ import localeCardList from '@/views/list/card/locale/en-US';
 import localeSettings from './en-US/settings';
 
 export default {
-  'menu.dashboard': 'Dashboard', 
+  'menu.cardManage': 'cardManage',
+  'menu.cardManage.list': 'cardManage-list',
+  'menu.proxyManage': 'proxyManage',
+  'menu.proxyManage.list1': 'proxyManage-list1',
+  'menu.proxyManage.list2': 'proxyManage-list2',
+  'menu.userManage':'userManage',
+  'menu.userManage.list': 'userManage-list',
+
   'menu.server.dashboard': 'Dashboard-Server',
   'menu.server.workplace': 'Workplace-Server',
   'menu.server.monitor': 'Monitor-Server',
   'menu.arcoWebsite': 'Arco Design',
-  'menu.server.list1': 'list1',
-  'menu.server.list2': 'list2',
   'menu.server.list3': 'list3',
   'menu.faq': 'FAQ',
   'navbar.docs': 'Docs',

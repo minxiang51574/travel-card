@@ -11,7 +11,7 @@ const LIST: AppRouteRecordRaw = {
   name: 'Proxy-manage',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: '代理管理',
+    locale: 'menu.proxyManage',
     requiresAuth: false,
     icon: 'icon-list',
     order: 2,
@@ -22,7 +22,7 @@ const LIST: AppRouteRecordRaw = {
       name: 'Proxy-list-one',
       component: () => import('@/views/proxy-manage/proxy-list-one.vue'),
       meta: {
-        locale: 'menu.server.list1',
+        locale: 'menu.proxyManage.list1',
         requiresAuth: true,
         roles: ['*'],
       },
@@ -32,7 +32,7 @@ const LIST: AppRouteRecordRaw = {
       name: 'Proxy-list-two',
       component: () => import('@/views/proxy-manage/proxy-list-two.vue'),
       meta: {
-        locale: 'menu.server.list2',
+        locale: 'menu.proxyManage.list2',
         requiresAuth: true,
         roles: ['*'],
       },

@@ -11,7 +11,7 @@ const LIST: AppRouteRecordRaw = {
   name: 'User-manage',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: '用户管理',
+    locale: 'menu.userManage',
     requiresAuth: false,
     icon: 'icon-list',
     order: 3,
@@ -22,7 +22,7 @@ const LIST: AppRouteRecordRaw = {
       name: 'User-list',
       component: () => import('@/views/user-manage/user-list.vue'),
       meta: {
-        locale: 'menu.server.list3',
+        locale: 'menu.userManage.list',
         requiresAuth: true,
         roles: ['*'],
       },

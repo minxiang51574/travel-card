@@ -1,6 +1,11 @@
+<!--
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:57
+ * @Description: 
+-->
 <template>
   <div class="container">
-    <Breadcrumb :items="['menu.list', 'menu.list.cardList']" />
+    <Breadcrumb :items="['menu.userManage', 'menu.userManage.list']" />
     <a-row :gutter="20" align="stretch">
       <a-col :span="24">
         <a-card class="general-card" :title="$t('menu.list.cardList')">
