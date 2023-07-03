@@ -1,3 +1,8 @@
+/*
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:56
+ * @Description: 
+ */
 import axios from 'axios';
 import type { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { Message, Modal } from '@arco-design/web-vue';
@@ -11,9 +16,9 @@ export interface HttpResponse<T = unknown> {
   data: T;
 }
 
-if (import.meta.env.VITE_API_BASE_URL) {
-  axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
-}
+// if (import.meta.env.VITE_API_BASE_URL) {
+//   axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
+// }
 
 axios.interceptors.request.use(
   (config: AxiosRequestConfig) => {

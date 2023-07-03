@@ -1,3 +1,8 @@
+/*
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:56
+ * @Description: 
+ */
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -48,4 +53,13 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    proxy: {
+      "/api/": {
+        target: "http://localhost:3000",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, "/api"),
+      },
+    }
+  }
 });
