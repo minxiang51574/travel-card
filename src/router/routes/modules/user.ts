@@ -1,3 +1,8 @@
+/*
+ * @Author: Mx
+ * @Date: 2023-07-03 10:59:30
+ * @Description:
+ */
 import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
@@ -13,15 +18,15 @@ const LIST: AppRouteRecordRaw = {
   },
   children: [
     {
-      path: 'user-list', 
+      path: 'user-list',
       name: 'User-list',
       component: () => import('@/views/user-manage/user-list.vue'),
       meta: {
-        locale: '用户列表',
+        locale: 'menu.server.list3',
         requiresAuth: true,
         roles: ['*'],
       },
-    }
+    },
   ],
 };
 

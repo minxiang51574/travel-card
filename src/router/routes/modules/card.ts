@@ -1,7 +1,7 @@
 /*
  * @Author: Mx
  * @Date: 2023-07-02 17:22:09
- * @Description: 
+ * @Description:
  */
 import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
@@ -22,7 +22,7 @@ const LIST: AppRouteRecordRaw = {
       name: 'Card-list',
       component: () => import('@/views/card-manage/card-list.vue'),
       meta: {
-        locale: '旅游卡列表',
+        locale: 'menu.dashboard',
         requiresAuth: true,
         roles: ['*'],
       },

@@ -67,7 +67,7 @@
   const navbar = computed(() => appStore.navbar);
   const renderMenu = computed(() => appStore.menu && !appStore.topMenu);
   const hideMenu = computed(() => appStore.hideMenu);
-  const footer = computed(() => appStore.footer);
+  // const footer = computed(() => appStore.footer);
   const menuWidth = computed(() => {
     return appStore.menuCollapse ? 48 : appStore.menuWidth;
   });
