@@ -13,8 +13,8 @@ const config = {
         HOST: '114.132.248.143'
     },
     jwt:{
-        jwt_secret:process.env.JWT_SECRET,
-        jwt_expire:process.env.JWT_EXPIRE
+        jwt_secret:"546143220@qq.com",
+        jwt_expire:"7d"
     },
 }
 module.exports = config

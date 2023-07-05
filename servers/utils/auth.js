@@ -15,6 +15,21 @@ function sign(data,time){
     }
     return jwt.sign(data,config.jwt.jwt_secret,{expiresIn:time})
 }
+function verify(token){
+    try{
+        const decoded = jwt.verify(token,config.jwt.jwt_secret)
+        return {
+            admin:decoded,
+            error:null
+        }
+    }catch(err){
+        return {
+            admin:null,
+            error:err
+        }
+    }
+}
 module.exports = {
     sign,
+    verify
 }

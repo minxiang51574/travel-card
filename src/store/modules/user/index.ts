@@ -1,3 +1,8 @@
+/*
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:57
+ * @Description: 
+ */
 import { defineStore } from 'pinia';
 import {
   login as userLogin,
@@ -64,7 +69,7 @@ const useUserStore = defineStore('user', {
     async login(loginForm: LoginData) {
       try {
         const res = await userLogin(loginForm);
-        setToken(res.data.token);
+        setToken(res.data);
       } catch (err) {
         clearToken();
         throw err;
