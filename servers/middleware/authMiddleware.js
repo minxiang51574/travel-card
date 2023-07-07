@@ -10,13 +10,13 @@ function authMiddleware(ctx, next) {
   const token = ctx.headers.authorization;
   if (token !== undefined && token !== '') {
     const { error, admin } = verify(token);
+    console.log('error', error);
+
     if (error !== null) {
-      logger.error(`登录错误${error.message}`);
       response.error(ctx, `登录过期请重新登录${error.message}`, '', 401);
     } else {
-      console.log('获取登录信息如下')
-      console.log(admin)
-      console.log(admin)
+      // console.log('获取登录信息如下');
+      // console.log(admin);
       // console.log(admin._doc)  // 这个数据有点扯淡了一下载 admin._doc 一下子admin
       let userInfo = '';
       if (admin._doc) {

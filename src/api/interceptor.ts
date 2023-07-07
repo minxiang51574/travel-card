@@ -1,7 +1,7 @@
 /*
  * @Author: Mx
  * @Date: 2023-06-26 22:00:56
- * @Description: 
+ * @Description:
  */
 import axios from 'axios';
 import type { AxiosRequestConfig, AxiosResponse } from 'axios';
@@ -31,7 +31,7 @@ axios.interceptors.request.use(
       if (!config.headers) {
         config.headers = {};
       }
-      config.headers.Authorization = `Bearer ${token}`;
+      config.headers.Authorization = `${token}`;
     }
     return config;
   },

@@ -1,3 +1,8 @@
+<!--
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:57
+ * @Description: 
+-->
 <template>
   <div class="content">
     <a-result class="result" status="404" :subtitle="'not found'"> </a-result>
@@ -13,7 +18,7 @@
   const router = useRouter();
   const back = () => {
     // warning： Go to the node that has the permission
-    router.push({ name: 'Workplace' });
+    router.push({ name: 'Card-list' });
   };
 </script>
 
@@ -23,8 +28,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -95px;
     margin-top: -121px;
+    margin-left: -95px;
     text-align: center;
   }
 </style>

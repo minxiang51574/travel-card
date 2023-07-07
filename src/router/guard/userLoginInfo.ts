@@ -1,7 +1,7 @@
 /*
  * @Author: Mx
  * @Date: 2023-06-26 22:00:57
- * @Description: 
+ * @Description:
  */
 import type { Router, LocationQueryRaw } from 'vue-router';
 import NProgress from 'nprogress'; // progress bar
@@ -13,13 +13,12 @@ export default function setupUserLoginInfoGuard(router: Router) {
   router.beforeEach(async (to, from, next) => {
     NProgress.start();
     const userStore = useUserStore();
-    console.log(1111);
     if (isLogin()) {
       if (userStore.role) {
         next();
       } else {
         try {
-          await userStore.info(); 
+          await userStore.info();
           next();
         } catch (error) {
           await userStore.logout();
