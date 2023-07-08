@@ -1,3 +1,8 @@
+/*
+ * @Author: Mx
+ * @Date: 2023-06-26 22:00:56
+ * @Description:
+ */
 import { mergeConfig } from 'vite';
 import baseConfig from './vite.config.base';
 import configCompressPlugin from './plugin/compress';
