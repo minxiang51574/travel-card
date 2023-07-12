@@ -1,8 +1,3 @@
-<!--
- * @Author: Mx
- * @Date: 2023-06-26 22:00:57
- * @Description: 
--->
 <template>
   <div class="content">
     <a-result class="result" status="404" :subtitle="'not found'"> </a-result>
